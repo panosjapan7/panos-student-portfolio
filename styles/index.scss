@@ -81,17 +81,30 @@ body {
                             -10px 3px 10px 0 rgba(14,31,53,0.12), 
                             -10px 5px 14px -100px rgba(14,31,53,0.12), 
                             -10px 5px 38px -20px rgba(14,31,53,0.06);
-
-                // box-shadow: -40px 18px 40px 1px rgba(14,31,53,0.20);
-
+                // animation: 2s 0s 1 tabDiv;
             }
+            
+            // @keyframes tabDiv {
+            //     0% {
+            //         box-shadow: none;
+            //         opacity: 0%;
+            //     }
+            //     100% {
+            //         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
+            //                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
+            //                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
+            //                 -10px 5px 38px -20px rgba(14,31,53,0.06);
+                    
+            //         opacity: 100%;
+            //     }
+            // }
 
 
             .aboutMeDiv, .projectListDiv, .educationDiv, .ambitionDiv, .interestsDiv, .linksListDiv {
                 display: flex;
                 align-items: center;
                 flex-direction: row;
-                margin-top: 50px;
+                margin-top: 45px;
                 margin-left: 70px;
                 background: none;
                 background-color: transparent;
@@ -148,7 +161,7 @@ body {
 
 
         .LinkedinGitHubEmailDiv {
-            margin-top: 70px;
+            margin-top: 100px;
             margin-left: 71px;
             display: flex;
             justify-content: stretch;
@@ -202,23 +215,70 @@ body {
                 font-family: variables.$fontPoppins;
                 font-size: 31pt;
                 font-weight: 400;
+                // animation: 1s all 0s h1Text;
             }
+                // @keyframes h1Text {
+                //     0% {
+                //         opacity: 0; 
+                //         transform:translateY(-30px);
+            
+                //     }
+                //     100% {
+                //         opacity: 1; 
+                //         transform:translateY(0px);
+                //     }
+                // }
             .paragraph1 {
                 margin-top: 0px;
                 font-family: variables.$fontPoppins;
                 font-size: 18pt;
                 font-weight: 300;
+                // animation: 1s all 1s paragraph1;
             }
+                // @keyframes paragraph1 {
+                //     0% {
+                //         opacity: 0; 
+                //         transform:translateY(-30px);
+            
+                //     }
+                //     100% {
+                //         opacity: 1; 
+                //         transform:translateY(0px);
+                //     }
+                // }
             .paragraph2 {
                 font-family: variables.$fontPoppins;
                 font-size: 16pt;
                 font-weight: 300;
+                // animation: 1s 0s 1 paragraph2;
             }
+                // @keyframes paragraph2 {
+                //     0% {
+                //         opacity: 0; 
+                //         transform:translateY(-30px);
+            
+                //     }
+                //     100% {
+                //         opacity: 1; 
+                //         transform:translateY(0px);
+                //     }
+                // }
             .paragraph3 {
                 font-family: variables.$fontPoppins;
                 font-size: 16pt;
                 font-weight: 300;
+                // animation: 1s 0s 1 paragraph3;
             }
+            // @keyframes paragraph3 {
+            //     0% {
+            //         opacity: 0;
+            //         transform: translateY(-30px);
+            //     }
+            //     100% {
+            //         opacity: 1;
+            //         transform: translateY(0px)
+            //     }
+            // }
         
         .imagesContainer {
             margin-right: 20px;
