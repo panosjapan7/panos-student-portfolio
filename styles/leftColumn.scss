@@ -1,0 +1,171 @@
+@use "variables.scss";
+
+//Left Column
+.leftColumnContainer {
+    display: block;
+}
+
+    .personalDetailsDiv {
+        display: flex;
+        align-items: flex-start;
+    }
+        .profilePicSmallContainer {
+            width: 60px;
+            height: auto;
+        }
+            .profilePicSmall {
+                border-radius: 1000px;
+                width: 100%;
+                height: auto;
+            }
+        
+        .fullNameProfessionDiv {
+            margin-left: 10px;
+            padding-top:3px;
+        }
+            .fullName {
+                margin-block-start: 0.5em;
+                margin-block-end: 0.4em;
+                letter-spacing: 1px;
+                color: variables.$textColorDarkGrey;
+                font-size: 13pt;
+                line-height: 12px;
+            }
+            .profession {
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                letter-spacing: 1.1px;
+                color: variables.$textColorLightGrey;
+                font-size: 10pt;
+                line-height: 16px;
+            }
+
+
+    .menuContainer {
+        display: block;
+        position: relative;
+        z-index: 1;
+        background: none;
+        background-color: transparent;
+    }
+        .aboutMeDiv, .projectListDiv, .educationDiv, .ambitionDiv, .interestsDiv, .linksListDiv {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 45px;
+            margin-left: 70px;
+            background: none;
+            background-color: transparent;
+        }
+        .interestsDiv {
+            margin-left: 66px;
+            background-color: transparent;
+        }   
+            .aboutMeIcon, .projectListIcon, .educationIcon, .ambitionIcon, .interestsIcon, .linksListIcon {
+                color: variables.$textColorDarkGrey;
+                width:18px;
+                height:18px;
+                position: relative;
+                padding-bottom: 3px;
+                margin-right: 15px;
+                z-index: 3;
+            }
+            .educationIcon {
+                padding-bottom: 0px;
+                width:20px;
+                height:20px;
+            }
+            .ambitionIcon {
+                width:20px;
+                height:23px;
+                padding-bottom: 10px;
+            }
+            .interestsIcon {
+                width:25px;
+                height:25px;
+            }
+            .linksListIcon {
+                width:22px;
+                height:22px;
+                padding-bottom: 1px;
+            }
+
+            .aboutMeText, .projectListText, .educationText, .ambitionText, .interestsText, .linksListText {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                color: variables.$textColorDarkGrey;
+                font-size: 12.5pt;
+                letter-spacing: 0.1em;
+                font-weight: 300;
+                z-index: 3;
+            }
+            .aboutMeText.active{
+                font-weight: 500;
+            }
+
+
+    .LinkedinGitHubEmailDiv {
+        margin-top: 100px;
+        margin-left: 71px;
+        display: flex;
+        justify-content: stretch;
+        gap: 32px;
+    }
+        .linkedinIcon, .GithubIcon, .EmailIcon {
+            // margin-right: 39px;
+            width: 16px;
+            height: 16px;
+            // padding-left: 5px;
+            // padding-right: 5px;
+        }
+        .EmailIcon {
+            margin-right: 0px;
+        }
+        .linkedinIcon:hover, .GithubIcon:hover, .EmailIcon:hover {
+            width: 18px;
+            height: 18px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .tabDiv {
+            background-color: variables.$backgroundColor;
+            width: 209px;
+            height: 48px;
+            border-top: #FFFFFF 3px solid;
+            border-bottom: #FFFFFF 3px solid;
+            border-left: #FFFFFF 2px solid;
+            border-right: none;
+            border-radius: 10px 0 0 10px;
+            position: absolute;
+            z-index: 2;
+            top: -15px;
+            left: 40px;
+            box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
+                        -10px 3px 10px 0 rgba(14,31,53,0.12), 
+                        -10px 5px 14px -100px rgba(14,31,53,0.12), 
+                        -10px 5px 38px -20px rgba(14,31,53,0.06);
+            // animation: 2s 0s 1 tabDiv;
+        }
+        
+        // @keyframes tabDiv {
+        //     0% {
+        //         box-shadow: none;
+        //         opacity: 0%;
+        //     }
+        //     100% {
+        //         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
+        //                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
+        //                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
+        //                 -10px 5px 38px -20px rgba(14,31,53,0.06);
+                
+        //         opacity: 100%;
+        //     }
+        // }
