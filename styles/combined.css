@@ -1,10 +1,9 @@
 body {
-  background-color: #ECECEC;
   font-family: "Poppins", sans-serif;
 }
 
-.wrapper {
-  background-color: #ECECEC;
+.wrapper.index {
+  background-color: #edeef2;
   display: flex;
   margin-top: 2%;
   margin-left: 1%;
@@ -12,16 +11,30 @@ body {
   z-index: 1;
 }
 
-.rightColumnDiv {
+.tabDivAboutMe {
+  background: #edeef2;
+  width: 209px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  top: -13px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  background: #EBECF0;
+  background-image: linear-gradient(-52deg, rgba(0, 0, 0, 0.01), rgba(255, 255, 255, 0.01), #ebecf0, rgba(235, 236, 240, 0.8));
+  box-shadow: -15px -5px 20px 0.07px rgba(250, 251, 255, 0.2), -15px 8px 18px 1px rgba(166, 171, 189, 0.8);
+}
+
+.rightColumnDiv.aboutMe {
   display: flex;
   flex-grow: 2;
   width: 70%;
   margin-left: 10px;
   padding-top: 50px;
   padding-bottom: 20px;
-  border: 3px solid #FFFFFF;
   border-radius: 20px;
-  box-shadow: 0 5px 10px 0 rgba(14, 31, 53, 0.06), 0 10px 20px 0 rgba(14, 31, 53, 0.12), 0 16px 24px -1px rgba(14, 31, 53, 0.12), 0 20px 38px -2px rgba(14, 31, 53, 0.06);
+  background-color: #edeef2;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
 }
 
 .copyContainer {
@@ -196,7 +209,7 @@ body {
   padding-bottom: 1px;
 }
 
-.aboutMeText, .projectListText, .educationText, .ambitionText, .interestsText, .linksListText {
+.menuOption {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-top: 0;
@@ -210,13 +223,14 @@ body {
   z-index: 3;
 }
 
-.aboutMeText.active {
+.menuOption.inactive {
   font-weight: 500;
 }
 
 .LinkedinGitHubEmailDiv {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-left: 71px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: stretch;
   gap: 32px;
@@ -240,20 +254,192 @@ a {
   text-decoration: none;
 }
 
-.tabDiv {
-  background-color: #ECECEC;
+body {
+  background-color: #edeef2;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: #edeef2;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+
+.tabDivProjectList {
+  background-color: #edeef2;
   width: 209px;
   height: 48px;
-  border-top: #FFFFFF 3px solid;
-  border-bottom: #FFFFFF 3px solid;
-  border-left: #FFFFFF 2px solid;
-  border-right: none;
-  border-radius: 10px 0 0 10px;
   position: absolute;
   z-index: 2;
-  top: -15px;
-  left: 40px;
-  box-shadow: -10px 3px 10px 0 rgba(14, 31, 53, 0.06), -10px 3px 10px 0 rgba(14, 31, 53, 0.12), -10px 5px 14px -100px rgba(14, 31, 53, 0.12), -10px 5px 38px -20px rgba(14, 31, 53, 0.06);
+  top: 58px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+.rightColumnDiv.projectList {
+  display: block;
+  flex-grow: 2;
+  width: 70%;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+
+.projectListRectangle {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.projectListH1Text {
+  width: auto;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.projectContainer.twitter {
+  display: flex;
+}
+
+.twitterProject {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 265px;
+  height: 330px;
+  background: #EBECF0;
+  border: 2px solid #FFFFFF;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 30px;
+}
+
+.h2ProjectTypeTwitter {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-block-end: 0em;
+  margin-top: 20px;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.h2projectHeaderTwitter {
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  color: #333232;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.twitterProjectParagrapsImageContaineDiv {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.paragraphTwitterProject {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  color: #333232;
+  font-weight: 400;
+  letter-spacing: 0.62px;
+  text-align: center;
+  font-style: italic;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 50;
+  position: relative;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.paragraphTwitterProject.one {
+  margin-bottom: 10px;
+}
+
+.twitterProjectImageDiv {
+  width: 200px;
+  height: 200px;
+  fill: #1da1f2;
+  opacity: 15%;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  margin-left: -100px;
+  top: 40%;
+  margin-top: -100px;
+}
+
+.twitterProjectImageDiv.twitterLogo {
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.twitterProjectToolsContainer {
+  margin-top: 10px;
+}
+
+.twitterProjectToolsHeader {
+  font-family: "Poppins", sans-serif;
+  font-size: 11.5pt;
+  color: #333232;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-left: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.twitterProjectToolsDiv {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: auto;
+}
+
+.toolName {
+  font-weight: 500;
+  font-size: 12pt;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  max-width: 100%;
+  margin-block-start: 0em;
+  margin-right: 20px;
+}
+
+.toolName.css {
+  margin-right: 0px;
 }
 
 /*# sourceMappingURL=combined.css.map */

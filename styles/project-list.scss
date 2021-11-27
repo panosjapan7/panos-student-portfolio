@@ -1,12 +1,12 @@
 @use "variables.scss";
 
 body {
-    background-color: variables.$backgroundColor;
+    background-color: variables.$backgroundColorNew;
     font-family: variables.$fontPoppins;
 }
 
 .wrapper {
-    background-color: variables.$backgroundColor;
+    background-color: variables.$backgroundColorNew;
     display: flex;
     margin-top: 2%;
     margin-left: 1%;
@@ -15,131 +15,211 @@ body {
 }
 
 
+.tabDivProjectList {
+    background-color: variables.$backgroundColorNew;
+    width: 209px;
+    height: 48px;
+    position: absolute;
+    z-index: 2;
+    top: 58px;
+    left: 45px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+    // animation: 2s 0s 1 tabDiv;
+}
+
+// @keyframes tabDiv {
+//     0% {
+//         box-shadow: none;
+//         opacity: 0%;
+//     }
+//     100% {
+//         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
+//                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
+//                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
+//                 -10px 5px 38px -20px rgba(14,31,53,0.06);
+        
+//         opacity: 100%;
+//     }
+// }
+
+
 //Right Column
-.rightColumnDiv {
-    display: flex;
+.rightColumnDiv.projectList {
+    display: block;
     flex-grow: 2;
     width: 70%;
     margin-left: 10px;
-    padding-top: 50px;
+    // padding-top: 10px;
     padding-bottom: 20px;
-    border: 3px solid #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px 0 rgba(14,31,53,0.06), 
-                0 10px 20px 0 rgba(14,31,53,0.12), 
-                0 16px 24px -1px rgba(14,31,53,0.12), 
-                0 20px 38px -2px rgba(14,31,53,0.06);
+    border-radius: 10px;
+    box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
 }
-    .copyContainer {
-        display: block;
-        margin-left: 30px;
+    .projectListRectangle {
+        width: 150px;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 20px;
+
+        // background-image: linear-gradient(-42deg, #000000 0%, #FFFFFF 100%);
+        // border: 1px solid rgba(255,255,255,0.40);
+        // background: #EBECF0;
+        // box-shadow: inset -5px -5px 10px 0 #FAFBFF, inset 3px 3px 7px 0 #A6ABBD;
+        // border-radius: 47px;
     }
-        .h1Text {
-            margin-top: 0px;
+        .projectListH1Text {
+            width: auto;
+            height: auto;
             font-family: variables.$fontPoppins;
-            font-size: 31pt;
-            font-weight: 400;
-            // animation: 1s all 0s h1Text;
+            font-size: 12pt;
+            font-weight: 500;
+            // color: #6D7587;
+            // color: variables.$textColorDarkGrey2;
+            letter-spacing: 2px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
         }
-            // @keyframes h1Text {
-            //     0% {
-            //         opacity: 0; 
-            //         transform:translateY(-30px);
-        
-            //     }
-            //     100% {
-            //         opacity: 1; 
-            //         transform:translateY(0px);
-            //     }
-            // }
-        .paragraph1 {
-            margin-top: 0px;
-            font-family: variables.$fontPoppins;
-            font-size: 18pt;
-            font-weight: 300;
-            // animation: 1s all 1s paragraph1;
-        }
-            // @keyframes paragraph1 {
-            //     0% {
-            //         opacity: 0; 
-            //         transform:translateY(-30px);
-        
-            //     }
-            //     100% {
-            //         opacity: 1; 
-            //         transform:translateY(0px);
-            //     }
-            // }
-        .paragraph2 {
-            font-family: variables.$fontPoppins;
-            font-size: 16pt;
-            font-weight: 300;
-            // animation: 1s 0s 1 paragraph2;
-        }
-            // @keyframes paragraph2 {
-            //     0% {
-            //         opacity: 0; 
-            //         transform:translateY(-30px);
-        
-            //     }
-            //     100% {
-            //         opacity: 1; 
-            //         transform:translateY(0px);
-            //     }
-            // }
-        .paragraph3 {
-            font-family: variables.$fontPoppins;
-            font-size: 16pt;
-            font-weight: 300;
-            // animation: 1s 0s 1 paragraph3;
-        }
-        // @keyframes paragraph3 {
-        //     0% {
-        //         opacity: 0;
-        //         transform: translateY(-30px);
-        //     }
-        //     100% {
-        //         opacity: 1;
-        //         transform: translateY(0px)
-        //     }
-        // }
     
-    .imagesContainer {
-        margin-right: 20px;
+
+    .projectContainer.twitter {
+        display: flex;
+        // row-gap: 20px;
+        // column-gap: 20px;
     }
-        .codeImageContainer {
-                width: auto;
-                height: 350px;
+    .twitterProject {
+            margin-top: 40px;
+            margin-left: 30px;
+            width: 265px;
+            height: 330px;
+            background: #EBECF0;
+            $background-image-rightColumnDiv: linear-gradient(-42deg,rgb(0, 0, 0, .02   ), rgb(255, 255, 255, 0.07));
+            border: 2px solid #FFFFFF;
+            box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+            border-radius: 30px;
+            // padding-left: 10px;
+            // padding-right: 10px;
         }
-            .codeImage {
-                width: auto;
-                height: 100%;
-                opacity: 50%;
+            .projectType {
+
             }
-        
-            .tabletImageContainer {
-                width: 400px;
-                height: auto;
-                margin-top: 30px;
-                padding-left: 30px;
-            }
-            .tabletImage {
-                width: 100%;
-                height: auto;
-            }
-        
-            .profilePhotoMainContentContainer {
-                width: 120px;
-                height: auto;
-                position: absolute;
-                right:170px;
-                top:94px
-            }
-                .profilePhotoMainContent {
-                    border-radius: 1000px;
-                    width: 100%;
-                    height: 100%;
-                    box-shadow: 0 5px 10px -1px rgba(14,31,53,0.06), 0 10px 20px -2px rgba(14,31,53,0.10), 0 16px 32px -3px rgba(14,31,53,0.12), 0 32px 64px -4px rgba(14,31,53,0.14), 0 40px 72px -5px rgba(14,31,53,0.24);
+                .h2ProjectTypeTwitter {
+                    font-family: variables.$fontPoppins;
+                    font-size: 12pt;
+                    font-weight: 500;
+                    // color: #6D7587;
+                    // color: variables.$textColorDarkGrey2;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    // margin-block-start: 0em;
+                    margin-block-end: 0em;
+                    margin-top: 20px;
+                    background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+                    background-size: 100%;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    -moz-text-fill-color: transparent;
                 }
+                
+                .h2projectHeaderTwitter {
+                    font-family: variables.$fontPoppins;
+                    font-size: 11pt;
+                    color: rgb(51, 50, 50);
+                    font-weight: 500;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+                
+                .twitterProjectParagrapsImageContaineDiv {
+                    position: relative;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+                    .paragraphTwitterProject {
+                        font-family: variables.$fontPoppins;
+                        font-size: 10pt;
+                        color: rgb(51, 50, 50);
+                        font-weight: 400;
+                        letter-spacing: 0.62px;
+                        text-align: center;
+                        font-style: italic;
+
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        z-index: 50;
+                        position: relative; //Added this so that the z-index works (otherwise, it wasn't wokring)
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                    }
+                    .paragraphTwitterProject.one {
+                        margin-bottom: 10px;
+                    }
+                    .twitterProjectImageDiv {
+                        width: 200px;
+                        height: 200px;
+                        fill: rgb(29, 161, 242);
+                        opacity: 15%;
+                        position: absolute;
+                        z-index: 4;
+                        
+                        //How to center an element with position absolute:
+                        left: 50%;
+                        margin-left: -100px;
+                        top: 40%;
+                        margin-top: -100px;
+                    }
+                    .twitterProjectImageDiv.twitterLogo{
+                        width: 100%;
+                        height: 100%;
+                        z-index: 4;
+                    }
+
+                .twitterProjectToolsContainer{
+                    margin-top: 10px;
+                }
+                    .twitterProjectToolsHeader {
+                        font-family: variables.$fontPoppins;
+                        font-size: 11.5pt;
+                        color: rgb(51, 50, 50);
+                        font-weight: 600;
+                        letter-spacing: 0;
+                        margin-left: 20px;
+                        margin-block-start: 0em;
+                        margin-block-end: 0em;
+                    }
+                    .twitterProjectToolsDiv {
+                        // display: flex;
+                        // justify-content: space-between;
+                        // flex-wrap: wrap;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        max-width: auto;
+                    }
+                        .toolName {
+                            font-weight: 500;
+                            font-size: 12pt;
+                            background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+                            background-size: 100%;
+                            -webkit-background-clip: text;
+                            -moz-background-clip: text;
+                            -webkit-text-fill-color: transparent; 
+                            -moz-text-fill-color: transparent;
+                            max-width: 100%;
+                            margin-block-start: 0em;
+                            margin-right: 20px;
+                        }
+                        .toolName.css {
+                            margin-right: 0px;
+                        }
 
 //End of Right Column
