@@ -19,7 +19,7 @@ body {
 
 .tabDivAboutMe {
     background: variables.$backgroundColorNew;
-    width: 209px;
+    width: 204px;
     height: 48px;
     position: absolute;
     z-index: 2;
@@ -28,7 +28,7 @@ body {
     border-radius: 10px 0 0 10px;
     background: #EBECF0;
     background-image: variables.$background-image-tabDiv;
-    box-shadow: -15px -5px 20px 0.07px rgba(250, 251, 255, 0.2), -15px 8px 18px 1px rgba(166, 171, 189, 0.8);
+    box-shadow: -20px -20px 25px 0 #FAFBFF, -20px 5px 25px 0 #A6ABBD;
 }
 
 // @keyframes tabDiv {

@@ -89,21 +89,24 @@ body {
             -moz-text-fill-color: transparent;
         }
     
-
+    .projectContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .projectContainer.twitter {
         display: flex;
         // row-gap: 20px;
         // column-gap: 20px;
     }
-    .twitterProject {
+    .twitterProject, .eventProject {
             margin-top: 40px;
             margin-left: 30px;
-            width: 265px;
-            height: 330px;
+            max-width: 265px;
+            min-height: 330px;
             background: #EBECF0;
             $background-image-rightColumnDiv: linear-gradient(-42deg,rgb(0, 0, 0, .02   ), rgb(255, 255, 255, 0.07));
             border: 2px solid #FFFFFF;
-            box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+            box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
             border-radius: 30px;
             // padding-left: 10px;
             // padding-right: 10px;
@@ -111,7 +114,7 @@ body {
             .projectType {
 
             }
-                .h2ProjectTypeTwitter {
+                .h2ProjectTypeTwitter, .h2ProjectTypeEvent {
                     font-family: variables.$fontPoppins;
                     font-size: 12pt;
                     font-weight: 500;
@@ -130,7 +133,7 @@ body {
                     -moz-text-fill-color: transparent;
                 }
                 
-                .h2projectHeaderTwitter {
+                .h2projectHeaderTwitter, .h2projectHeaderEvent {
                     font-family: variables.$fontPoppins;
                     font-size: 11pt;
                     color: rgb(51, 50, 50);
@@ -145,7 +148,7 @@ body {
                     margin: auto;
                     margin-top: 25px;
                 }
-                    .paragraphTwitterProject {
+                    .paragraphTwitterProject, .paragraphEventProject {
                         font-family: variables.$fontPoppins;
                         font-size: 10pt;
                         color: rgb(51, 50, 50);
@@ -184,23 +187,24 @@ body {
                         z-index: 4;
                     }
 
-                .twitterProjectToolsContainer{
-                    margin-top: 10px;
+                .twitterProjectToolsContainer {
+                    margin-top: max(24px);
+                    margin-bottom: max(10px);
                 }
-                    .twitterProjectToolsHeader {
+                    .twitterProjectToolsHeader, .eventProjectToolsHeader {
                         font-family: variables.$fontPoppins;
                         font-size: 11.5pt;
                         color: rgb(51, 50, 50);
-                        font-weight: 600;
+                        font-weight: 500;
                         letter-spacing: 0;
                         margin-left: 20px;
                         margin-block-start: 0em;
                         margin-block-end: 0em;
                     }
-                    .twitterProjectToolsDiv {
-                        // display: flex;
-                        // justify-content: space-between;
-                        // flex-wrap: wrap;
+                    .twitterProjectToolsDiv, .eventProjectToolsDiv {
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
                         margin-left: 20px;
                         margin-right: 20px;
                         max-width: auto;
@@ -221,5 +225,33 @@ body {
                         .toolName.css {
                             margin-right: 0px;
                         }
+        .eventProject {
+
+        }
+            .eventProjectImageDiv {
+                display: block;
+                max-width: 270px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+                .eventImage {
+                    width: 100%;
+                    height: auto;
+                }
+            .eventProjectParagrapDiv {
+                position: relative;
+                text-align: center;
+                margin: auto;
+                margin-top: 0px;
+            }
+                .paragraphEventProject.one {
+                    padding-left: 7px;
+                    padding-right: 7px;
+                }
+            .eventProjectToolsContainer {
+                margin-top: 10px;
+                margin-bottom: max(10px);
+            }
 
 //End of Right Column
