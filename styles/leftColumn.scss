@@ -105,7 +105,13 @@
             }
             .menuOption.inactive{
                 font-weight: 500;
+                cursor: default;
             }
+            .menuOption.active:hover{
+                font-weight: 500;
+                cursor: pointer;
+            }
+
 
 
     .LinkedinGitHubEmailDiv {
