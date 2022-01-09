@@ -27,21 +27,6 @@ body {
     box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
 }
 
-// @keyframes tabDiv {
-//     0% {
-//         box-shadow: none;
-//         opacity: 0%;
-//     }
-//     100% {
-//         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
-//                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
-//                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
-//                 -10px 5px 38px -20px rgba(14,31,53,0.06);
-        
-//         opacity: 100%;
-//     }
-// }
-
 
 //Right Column
 .rightColumnDiv.ambitions {
@@ -60,12 +45,6 @@ body {
         height: auto;
         margin-top: 30px;
         margin-left: 20px;
-
-        // background-image: linear-gradient(-42deg, #000000 0%, #FFFFFF 100%);
-        // border: 1px solid rgba(255,255,255,0.40);
-        // background: #EBECF0;
-        // box-shadow: inset -5px -5px 10px 0 #FAFBFF, inset 3px 3px 7px 0 #A6ABBD;
-        // border-radius: 47px;
     }
         .ambitionsH1Text {
             width: fit-content;
@@ -106,8 +85,6 @@ body {
                 border: 2px solid #FFFFFF;
                 box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
                 border-radius: 30px;
-                // padding-left: 10px;
-                // padding-right: 10px;
             }
                 .shortTermGoalsDiv {
                     
@@ -116,6 +93,12 @@ body {
 
                 }
                     .goalsP {
+                        background-image: linear-gradient(239deg, #37DBE0 62%, #1758F1 83%);
+                        background-size: 100%;
+                        -webkit-background-clip: text;
+                        -moz-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-text-fill-color: transparent;
                         font-family: variables.$fontPoppins;
                         font-size: 11pt;
                         font-weight: 400;

@@ -880,6 +880,12 @@ body {
 }
 
 .goalsP {
+  background-image: linear-gradient(239deg, #37DBE0 62%, #1758F1 83%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-size: 11pt;
   font-weight: 400;
@@ -984,6 +990,12 @@ body {
 }
 
 .interestP {
+  background-image: linear-gradient(220deg, #37DBE0 80%, #1758F1 98%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
   font-size: 11pt;
   font-weight: 400;
@@ -1001,6 +1013,136 @@ body {
 
 .interestTextP.spanForP {
   font-weight: 500;
+}
+
+body {
+  background-color: #edeef2;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: #edeef2;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+
+.tabDivLinks {
+  background: #edeef2;
+  width: 204px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  top: 345px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+.rightColumnDiv.links {
+  display: block;
+  flex-grow: 2;
+  width: 70%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+
+.linksRectangle {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.linksH1Text {
+  width: fit-content;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 15pt;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin-left: 25px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.linksButtonsContainer {
+  margin-top: 35px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 50px;
+}
+
+.aLinkButton {
+  cursor: pointer;
+}
+
+.aLinkButton.active:hover {
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.aLinkButton.inactive {
+  cursor: default;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #edeef2;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 20px;
+  width: 90px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeLogo {
+  width: 33px;
+  height: auto;
+}
+
+.githubButtonLogo, .linkedinButtonLogo {
+  width: 40px;
+  height: auto;
+}
+
+.emailButtonLogo {
+  width: 40px;
+  height: auto;
+}
+
+.linkName {
+  font-family: "Poppins", sans-serif;
+  color: #6D7587;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 12px;
 }
 
 /*# sourceMappingURL=combined.css.map */
