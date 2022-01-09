@@ -198,8 +198,10 @@ body {
 }
 
 .interestsIcon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: auto;
+  margin-bottom: -1px;
+  margin-left: 5px;
 }
 
 .linksListIcon {
@@ -484,6 +486,521 @@ body {
 .eventProjectToolsContainer {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+body {
+  background-color: #edeef2;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: #edeef2;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+
+.tabDivEducation {
+  background: #edeef2;
+  width: 204px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  top: 127px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+.rightColumnDiv.education {
+  display: block;
+  flex-grow: 2;
+  width: 70%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+
+.educationRectangle {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.educationH1Text {
+  width: auto;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 15pt;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.nackademinContainer {
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 28px;
+}
+
+.nackademinImageDiv {
+  width: 300px;
+}
+
+.nackademinImage {
+  width: 100%;
+  height: auto;
+}
+
+.stockholmSwedenP {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Poppins", sans-serif;
+  color: #6D7587;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11pt;
+}
+
+.webDevP {
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.yearDiv {
+  margin-top: 35px;
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.yearDiv.two, .yearDiv.three {
+  margin-top: 25px;
+  margin-left: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.yearDiv.three {
+  margin-bottom: 25px;
+}
+
+.year {
+  margin-right: 20px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 60%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.year.two {
+  margin-right: 20px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 60%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.yearThree {
+  margin-right: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: "Poppins", sans-serif;
+  color: #6D7587;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 20px 50px;
+  flex-wrap: wrap;
+}
+
+.buttonsContainer.three {
+  display: flex;
+  gap: 20px 23px;
+  flex-wrap: wrap;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #edeef2;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 20px;
+  width: 90px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonJsLogo {
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  width: 42px;
+  height: 42px;
+}
+
+.buttonReactLogo {
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  width: 42px;
+  height: 50px;
+}
+
+.buttonPHPLogo, .buttonALMLogo, .masterThesisLogo {
+  width: 42px;
+  height: auto;
+}
+
+.buttonFrontend2 {
+  background-color: #edeef2;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 20px;
+  width: 90px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonTech {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.buttonTechFrontendTwo {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.buttonTechUnfinished {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #6D7587;
+}
+
+.buttonTechUnfinishedLIA {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #6D7587;
+}
+
+.course {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+}
+
+.courseUnfinished {
+  font-family: "Poppins", sans-serif;
+  color: #6D7587;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 12px;
+}
+
+.courseUnfinished.apprenticeship {
+  font-size: 13px;
+}
+
+body {
+  background-color: #edeef2;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: #edeef2;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+
+.tabDivAmbitions {
+  background: #edeef2;
+  width: 204px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  top: 202px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+.rightColumnDiv.ambitions {
+  display: block;
+  flex-grow: 2;
+  width: 70%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+
+.ambitionsRectangle {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.ambitionsH1Text {
+  width: fit-content;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 15pt;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.allGoalsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goalsCard {
+  margin-top: 40px;
+  margin-left: 30px;
+  max-width: 450px;
+  min-height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background: #EBECF0;
+  border: 2px solid #FFFFFF;
+  box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 30px;
+}
+
+.goalsP {
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.goalsTextP {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.goalsTextP.spanForP {
+  font-weight: 500;
+}
+
+body {
+  background-color: #edeef2;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: #edeef2;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+
+.tabDivInterests {
+  background: #edeef2;
+  width: 204px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  top: 276px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+.rightColumnDiv.ambitions {
+  display: block;
+  flex-grow: 2;
+  width: 70%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+
+.ambitionsRectangle {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.ambitionsH1Text {
+  width: fit-content;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 15pt;
+  font-weight: 500;
+  letter-spacing: 4px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.allGoalsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goalsCard {
+  margin-top: 40px;
+  margin-left: 30px;
+  max-width: 450px;
+  min-height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background: #EBECF0;
+  border: 2px solid #FFFFFF;
+  box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 30px;
+}
+
+.goalsP {
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.goalsTextP {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.goalsTextP.spanForP {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=combined.css.map */

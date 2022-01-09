@@ -1,0 +1,143 @@
+@use "variables.scss";
+
+body {
+    background-color: variables.$backgroundColorNew;
+    font-family: variables.$fontPoppins;
+}
+
+.wrapper {
+    background-color: variables.$backgroundColorNew;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    z-index: 1;
+}
+
+
+.tabDivAmbitions {
+    background: variables.$backgroundColorNew;
+    width: 204px;
+    height: 48px;
+    position: absolute;
+    z-index: 2;
+    top: 202px;
+    left: 45px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+// @keyframes tabDiv {
+//     0% {
+//         box-shadow: none;
+//         opacity: 0%;
+//     }
+//     100% {
+//         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
+//                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
+//                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
+//                 -10px 5px 38px -20px rgba(14,31,53,0.06);
+        
+//         opacity: 100%;
+//     }
+// }
+
+
+//Right Column
+.rightColumnDiv.ambitions {
+    display: block;
+    flex-grow: 2;
+    width: 70%;
+    margin-left: 10px;
+    padding-left: 10px;
+    // padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+    .ambitionsRectangle {
+        width: 150px;
+        height: auto;
+        margin-top: 30px;
+        margin-left: 20px;
+
+        // background-image: linear-gradient(-42deg, #000000 0%, #FFFFFF 100%);
+        // border: 1px solid rgba(255,255,255,0.40);
+        // background: #EBECF0;
+        // box-shadow: inset -5px -5px 10px 0 #FAFBFF, inset 3px 3px 7px 0 #A6ABBD;
+        // border-radius: 47px;
+    }
+        .ambitionsH1Text {
+            width: fit-content;
+            height: auto;
+            font-family: variables.$fontPoppins;
+            font-size: 15pt;
+            font-weight: 500;
+            letter-spacing: 4px;
+            padding-top: 0px;
+            padding-bottom: 5px;
+            margin-left: 20px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    
+        .allGoalsContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .goalsCard {
+                margin-top: 40px;
+                margin-left: 30px;
+                max-width: 450px;
+                min-height: fit-content;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 5px;
+                background: #EBECF0;
+                $background-image-rightColumnDiv: linear-gradient(-42deg,rgb(0, 0, 0, .02   ), rgb(255, 255, 255, 0.07));
+                border: 2px solid #FFFFFF;
+                box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+                border-radius: 30px;
+                // padding-left: 10px;
+                // padding-right: 10px;
+            }
+                .shortTermGoalsDiv {
+                    
+                }
+                .longTermGoalsDiv {
+
+                }
+                    .goalsP {
+                        font-family: variables.$fontPoppins;
+                        font-size: 11pt;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        margin-bottom: 0px;
+                    }
+                    .goalsTextP {
+                        font-family: variables.$fontPoppins;
+                        font-size: 10pt;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        margin-top: 5px;
+                    }
+                        .goalsTextP.spanForP {
+                            font-weight: 500;
+                        }
+
+
+            
+                
+
+            
+
+
+//End of Right Column
