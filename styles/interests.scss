@@ -27,47 +27,25 @@ body {
     box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
 }
 
-// @keyframes tabDiv {
-//     0% {
-//         box-shadow: none;
-//         opacity: 0%;
-//     }
-//     100% {
-//         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
-//                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
-//                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
-//                 -10px 5px 38px -20px rgba(14,31,53,0.06);
-        
-//         opacity: 100%;
-//     }
-// }
-
 
 //Right Column
-.rightColumnDiv.ambitions {
+.rightColumnDiv.interests {
     display: block;
     flex-grow: 2;
     width: 70%;
     margin-left: 10px;
     padding-left: 10px;
-    // padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
 }
-    .ambitionsRectangle {
+    .interestsRectangle {
         width: 150px;
         height: auto;
         margin-top: 30px;
         margin-left: 20px;
-
-        // background-image: linear-gradient(-42deg, #000000 0%, #FFFFFF 100%);
-        // border: 1px solid rgba(255,255,255,0.40);
-        // background: #EBECF0;
-        // box-shadow: inset -5px -5px 10px 0 #FAFBFF, inset 3px 3px 7px 0 #A6ABBD;
-        // border-radius: 47px;
     }
-        .ambitionsH1Text {
+        .interestsH1Text {
             width: fit-content;
             height: auto;
             font-family: variables.$fontPoppins;
@@ -87,12 +65,12 @@ body {
             -moz-text-fill-color: transparent;
         }
     
-        .allGoalsContainer {
+        .allInterestsContainer {
             display: flex;
             flex-wrap: wrap;
         }
 
-            .goalsCard {
+            .interestsCard {
                 margin-top: 40px;
                 margin-left: 30px;
                 max-width: 450px;
@@ -106,38 +84,24 @@ body {
                 border: 2px solid #FFFFFF;
                 box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
                 border-radius: 30px;
-                // padding-left: 10px;
-                // padding-right: 10px;
             }
-                .shortTermGoalsDiv {
-                    
-                }
-                .longTermGoalsDiv {
 
-                }
-                    .goalsP {
+                    .interestP {
                         font-family: variables.$fontPoppins;
                         font-size: 11pt;
                         font-weight: 400;
                         letter-spacing: 1px;
                         margin-bottom: 0px;
                     }
-                    .goalsTextP {
+                    .interestTextP {
                         font-family: variables.$fontPoppins;
                         font-size: 10pt;
                         font-weight: 300;
                         letter-spacing: 1px;
                         margin-top: 5px;
                     }
-                        .goalsTextP.spanForP {
+                        .interestTextP.spanForP {
                             font-weight: 500;
                         }
-
-
-            
-                
-
-            
-
 
 //End of Right Column

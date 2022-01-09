@@ -925,7 +925,7 @@ body {
   box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
 }
 
-.rightColumnDiv.ambitions {
+.rightColumnDiv.interests {
   display: block;
   flex-grow: 2;
   width: 70%;
@@ -936,14 +936,14 @@ body {
   box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
 }
 
-.ambitionsRectangle {
+.interestsRectangle {
   width: 150px;
   height: auto;
   margin-top: 30px;
   margin-left: 20px;
 }
 
-.ambitionsH1Text {
+.interestsH1Text {
   width: fit-content;
   height: auto;
   font-family: "Poppins", sans-serif;
@@ -963,12 +963,12 @@ body {
   -moz-text-fill-color: transparent;
 }
 
-.allGoalsContainer {
+.allInterestsContainer {
   display: flex;
   flex-wrap: wrap;
 }
 
-.goalsCard {
+.interestsCard {
   margin-top: 40px;
   margin-left: 30px;
   max-width: 450px;
@@ -983,7 +983,7 @@ body {
   border-radius: 30px;
 }
 
-.goalsP {
+.interestP {
   font-family: "Poppins", sans-serif;
   font-size: 11pt;
   font-weight: 400;
@@ -991,7 +991,7 @@ body {
   margin-bottom: 0px;
 }
 
-.goalsTextP {
+.interestTextP {
   font-family: "Poppins", sans-serif;
   font-size: 10pt;
   font-weight: 300;
@@ -999,7 +999,7 @@ body {
   margin-top: 5px;
 }
 
-.goalsTextP.spanForP {
+.interestTextP.spanForP {
   font-weight: 500;
 }
 
