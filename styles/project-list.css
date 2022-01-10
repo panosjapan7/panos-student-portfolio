@@ -1,0 +1,228 @@
+body {
+  background-color: #edeef2;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: #edeef2;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+  z-index: 1;
+}
+
+.tabDivProjectList {
+  background-color: #edeef2;
+  width: 209px;
+  height: 48px;
+  position: absolute;
+  z-index: 2;
+  top: 58px;
+  left: 45px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
+}
+
+.rightColumnDiv.projectList {
+  display: block;
+  flex-grow: 2;
+  width: 70%;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+}
+
+.projectListRectangle {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.projectListH1Text {
+  width: auto;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectContainer.twitter {
+  display: flex;
+}
+
+.twitterProject, .eventProject {
+  margin-top: 40px;
+  margin-left: 30px;
+  max-width: 265px;
+  min-height: 330px;
+  background: #EBECF0;
+  border: 2px solid #FFFFFF;
+  box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
+  border-radius: 30px;
+}
+
+.h2ProjectTypeTwitter, .h2ProjectTypeEvent {
+  font-family: "Poppins", sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-block-end: 0em;
+  margin-top: 20px;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.h2projectHeaderTwitter, .h2projectHeaderEvent {
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  color: #333232;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.twitterProjectParagrapsImageContaineDiv {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.paragraphTwitterProject, .paragraphEventProject {
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  color: #333232;
+  font-weight: 400;
+  letter-spacing: 0.62px;
+  text-align: center;
+  font-style: italic;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 50;
+  position: relative;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.paragraphTwitterProject.one {
+  margin-bottom: 10px;
+}
+
+.twitterProjectImageDiv {
+  width: 200px;
+  height: 200px;
+  fill: #1da1f2;
+  opacity: 15%;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  margin-left: -100px;
+  top: 40%;
+  margin-top: -100px;
+}
+
+.twitterProjectImageDiv.twitterLogo {
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.twitterProjectToolsContainer {
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.twitterProjectToolsHeader, .eventProjectToolsHeader {
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  color: #333232;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-left: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.twitterProjectToolsDiv, .eventProjectToolsDiv {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: auto;
+}
+
+.toolName {
+  font-weight: 500;
+  font-size: 12pt;
+  background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  max-width: 100%;
+  margin-block-start: 0em;
+  margin-right: 20px;
+}
+
+.toolName.css {
+  margin-right: 0px;
+}
+
+.eventProjectImageDiv {
+  display: block;
+  max-width: 270px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eventImage {
+  width: 100%;
+  height: auto;
+}
+
+.eventProjectParagrapDiv {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.paragraphEventProject.one {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.eventProjectToolsContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=project-list.css.map */

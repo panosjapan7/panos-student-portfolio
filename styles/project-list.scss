@@ -25,23 +25,7 @@ body {
     left: 45px;
     border-radius: 10px 0 0 10px;
     box-shadow: -10px 0px 35px 0 #FAFBFF, -15px 5px 20px 0 #A6ABBD;
-    // animation: 2s 0s 1 tabDiv;
 }
-
-// @keyframes tabDiv {
-//     0% {
-//         box-shadow: none;
-//         opacity: 0%;
-//     }
-//     100% {
-//         box-shadow: -10px 3px 10px 0 rgba(14,31,53,0.06),
-//                 -10px 3px 10px 0 rgba(14,31,53,0.12), 
-//                 -10px 5px 14px -100px rgba(14,31,53,0.12), 
-//                 -10px 5px 38px -20px rgba(14,31,53,0.06);
-        
-//         opacity: 100%;
-//     }
-// }
 
 
 //Right Column
@@ -50,37 +34,26 @@ body {
     flex-grow: 2;
     width: 70%;
     margin-left: 10px;
-    // padding-top: 10px;
     padding-bottom: 20px;
+    padding-left: 30px;
     border-radius: 10px;
     box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
 }
-    .projectListRectangle {
-        width: 150px;
+    .projectListHeader {
+        width: auto;
         height: auto;
-        margin-top: 10px;
-        margin-left: 20px;
-
-        // background-image: linear-gradient(-42deg, #000000 0%, #FFFFFF 100%);
-        // border: 1px solid rgba(255,255,255,0.40);
-        // background: #EBECF0;
-        // box-shadow: inset -5px -5px 10px 0 #FAFBFF, inset 3px 3px 7px 0 #A6ABBD;
-        // border-radius: 47px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 10px;
     }
         .projectListH1Text {
-            width: auto;
+            width: fit-content;
             height: auto;
             font-family: variables.$fontPoppins;
-            font-size: 12pt;
+            font-size: 15pt;
             font-weight: 500;
-            // color: #6D7587;
-            // color: variables.$textColorDarkGrey2;
-            letter-spacing: 2px;
-            text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            margin-block-start: 0em;
-            margin-block-end: 0em;
+            letter-spacing: 4px;
+            margin-left: 0px;
             background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
             background-size: 100%;
             -webkit-background-clip: text;
@@ -89,30 +62,35 @@ body {
             -moz-text-fill-color: transparent;
         }
     
-    .projectContainer {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .projectContainer.twitter {
-        display: flex;
-        // row-gap: 20px;
-        // column-gap: 20px;
-    }
+    // .projectContainer {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+    // .projectContainer.twitter {
+    //     display: flex;
+    // }
     .twitterProject, .eventProject {
-            margin-top: 40px;
-            margin-left: 30px;
-            max-width: 265px;
-            min-height: 330px;
+            
+            max-width: fit-content;
+            min-height: auto;
             background: #EBECF0;
             $background-image-rightColumnDiv: linear-gradient(-42deg,rgb(0, 0, 0, .02   ), rgb(255, 255, 255, 0.07));
             border: 2px solid #FFFFFF;
             box-shadow: 10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
             border-radius: 30px;
-            // padding-left: 10px;
-            // padding-right: 10px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            
         }
-            .projectType {
+        .twitterProjectContents {
+            display:flex;
+            align-items: flex-end;
+        }
 
+            .paragrapsContainer {
+                margin-top: 0px;
+                max-width: 500px;
             }
                 .h2ProjectTypeTwitter, .h2ProjectTypeEvent {
                     font-family: variables.$fontPoppins;
@@ -121,11 +99,10 @@ body {
                     // color: #6D7587;
                     // color: variables.$textColorDarkGrey2;
                     letter-spacing: 2px;
-                    text-align: center;
                     // margin-block-start: 0em;
-                    margin-block-end: 0em;
                     margin-top: 20px;
-                    background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+                    margin-block-end: 0em;
+                    background-image: linear-gradient(239deg, #37DBE0 80%, #1758F1 98%);
                     background-size: 100%;
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
@@ -139,65 +116,50 @@ body {
                     color: rgb(51, 50, 50);
                     font-weight: 500;
                     letter-spacing: 0;
-                    text-align: center;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
                 }
                 
-                .twitterProjectParagrapsImageContaineDiv {
-                    position: relative;
-                    text-align: center;
-                    margin: auto;
-                    margin-top: 25px;
+                
+                .paragraphTwitterProject, .paragraphEventProject {
+                    font-family: variables.$fontPoppins;
+                    font-size: 10pt;
+                    color: rgb(51, 50, 50);
+                    font-weight: 400;
+                    letter-spacing: 0.62px;
+                    font-style: italic;
+                    z-index: 50;
+                    position: relative; //Added this so that the z-index works (otherwise, it wasn't wokring)
+                    margin-block-start: 0em;
+                    margin-block-end: 0em;
+                    // max-width: 500px;
                 }
-                    .paragraphTwitterProject, .paragraphEventProject {
-                        font-family: variables.$fontPoppins;
-                        font-size: 10pt;
-                        color: rgb(51, 50, 50);
-                        font-weight: 400;
-                        letter-spacing: 0.62px;
-                        text-align: center;
-                        font-style: italic;
-
-                        padding-left: 15px;
-                        padding-right: 15px;
-                        z-index: 50;
-                        position: relative; //Added this so that the z-index works (otherwise, it wasn't wokring)
-                        margin-block-start: 0em;
-                        margin-block-end: 0em;
-                    }
-                    .paragraphTwitterProject.one {
-                        margin-bottom: 10px;
-                    }
-                    .twitterProjectImageDiv {
-                        width: 200px;
-                        height: 200px;
-                        fill: rgb(29, 161, 242);
-                        opacity: 15%;
-                        position: absolute;
-                        z-index: 4;
-                        
-                        //How to center an element with position absolute:
-                        left: 50%;
-                        margin-left: -100px;
-                        top: 40%;
-                        margin-top: -100px;
-                    }
-                    .twitterProjectImageDiv.twitterLogo{
-                        width: 100%;
-                        height: 100%;
-                        z-index: 4;
+                .paragraphTwitterProject {
+                    margin-bottom: 10px;
+                }
+                
+                .twitterHassanImageDiv {
+                    width:300px;
+                    height: auto;
+                    border-radius: 20px;
+                }
+                    .twitterHassanImageDiv img {
+                        width:100%;
+                        height: auto;
+                        border-radius: 20px;
+                        box-shadow: 0 20px 44px -6px rgba(14,31,53,0.36);
                     }
 
                 .twitterProjectToolsContainer {
                     margin-top: max(24px);
-                    margin-bottom: max(10px);
+                    margin-bottom: 0px;
                 }
-                    .twitterProjectToolsHeader, .eventProjectToolsHeader {
+                    .twitterProjectToolsHeader, .twitterProjectLinksHeader, .eventProjectToolsHeader {
                         font-family: variables.$fontPoppins;
                         font-size: 11pt;
                         color: rgb(51, 50, 50);
                         font-weight: 500;
                         letter-spacing: 0;
-                        margin-left: 20px;
                         margin-block-start: 0em;
                         margin-block-end: 0em;
                     }
@@ -205,7 +167,6 @@ body {
                         display: flex;
                         justify-content: flex-start;
                         flex-wrap: wrap;
-                        margin-left: 20px;
                         margin-right: 20px;
                         max-width: auto;
                     }
@@ -225,33 +186,89 @@ body {
                         .toolName.css {
                             margin-right: 0px;
                         }
-        .eventProject {
 
-        }
-            .eventProjectImageDiv {
-                display: block;
-                max-width: 270px;
-                height: auto;
-                margin-left: auto;
-                margin-right: auto;
+
+                .linksContainer{
+                    margin-top: 30px;
+                }
+                    .linkName.left {
+                        letter-spacing: 0px;
+                        margin-right: 30px;
+                    }
+                    .linkName.right {
+                        letter-spacing: 0px;
+                        font-size: 10pt;
+                    }
+                    .linkName:hover {
+                        background-image: linear-gradient(239deg, #37DBE0 10%, #1758F1 73%);
+                        background-size: 100%;
+                        -webkit-background-clip: text;
+                        -moz-background-clip: text;
+                        -webkit-text-fill-color: transparent; 
+                        -moz-text-fill-color: transparent;   
+                    }
+                
+
+            .rightImagesContainer {
+                margin-left: 50px;
+                // margin-right: 20px;
+                margin-top: 20px;
+                position: relative;
             }
-                .eventImage {
-                    width: 100%;
+                .desktopImageContainer {
+                    width:450px;
                     height: auto;
                 }
-            .eventProjectParagrapDiv {
-                position: relative;
-                text-align: center;
-                margin: auto;
-                margin-top: 0px;
-            }
-                .paragraphEventProject.one {
-                    padding-left: 7px;
-                    padding-right: 7px;
+                    .desktopImageContainer img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 20px;
+                        box-shadow: 0 40px 64px -6px rgba(14,31,53,0.36);
+                    }
+                .mobileImageContainer {
+                    width:128px;
+                    height: auto;
+                    position: absolute;
+                    bottom: 269px;
+                    left: -50px;
+
                 }
-            .eventProjectToolsContainer {
-                margin-top: 10px;
-                margin-bottom: max(10px);
-            }
+                    .mobileImageContainer img {
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
+                        // box-shadow: 0 40px 64px -6px rgba(14,31,53,0.36);
+                        
+                    }
+
+
+        // .eventProject {
+
+        // }
+        //     .eventProjectImageDiv {
+        //         display: block;
+        //         max-width: 270px;
+        //         height: auto;
+        //         margin-left: auto;
+        //         margin-right: auto;
+        //     }
+        //         .eventImage {
+        //             width: 100%;
+        //             height: auto;
+        //         }
+        //     .eventProjectParagrapDiv {
+        //         position: relative;
+        //         text-align: center;
+        //         margin: auto;
+        //         margin-top: 0px;
+        //     }
+        //         .paragraphEventProject.one {
+        //             padding-left: 7px;
+        //             padding-right: 7px;
+        //         }
+        //     .eventProjectToolsContainer {
+        //         margin-top: 10px;
+        //         margin-bottom: max(10px);
+        //     }
 
 //End of Right Column
