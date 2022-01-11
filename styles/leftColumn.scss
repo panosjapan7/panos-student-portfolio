@@ -3,6 +3,7 @@
 //Left Column
 .leftColumnContainer {
     display: block;
+    position: fixed;
 }
 
     .personalDetailsDiv {
@@ -47,6 +48,7 @@
         z-index: 1;
         background: none;
         background-color: transparent;
+        
     }
         .aboutMeDiv, .projectListDiv, .educationDiv, .ambitionDiv, .interestsDiv, .linksListDiv {
             display: flex;
@@ -56,6 +58,7 @@
             margin-left: 70px;
             background: none;
             background-color: transparent;
+            
         }
         .interestsDiv {
             margin-left: 66px;

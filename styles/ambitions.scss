@@ -32,8 +32,9 @@ body {
 .rightColumnDiv.ambitions {
     display: block;
     flex-grow: 2;
-    width: 70%;
-    margin-left: 10px;
+    min-width: 70%;
+    min-height: 660px;
+    margin-left: 248px;
     padding-left: 10px;
     // padding-top: 10px;
     padding-bottom: 20px;
