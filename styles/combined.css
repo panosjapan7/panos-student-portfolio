@@ -29,7 +29,7 @@ body {
   flex-grow: 2;
   width: 70%;
   margin-left: 248px;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
   border-radius: 20px;
   background-color: #edeef2;
@@ -309,7 +309,7 @@ body {
   width: auto;
   height: auto;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-left: 10px;
 }
 
