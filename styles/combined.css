@@ -503,6 +503,23 @@ body {
   position: absolute;
 }
 
+@media (max-width: 1300px) {
+  .twitterProject {
+    border-radius: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .twitterProjectContents {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
 body {
   background-color: #edeef2;
   font-family: "Poppins", sans-serif;

@@ -243,33 +243,30 @@ body {
                     }
 
 
-        // .eventProject {
+// Tablet Resolution
+@media (max-width: 1300px){
 
-        // }
-        //     .eventProjectImageDiv {
-        //         display: block;
-        //         max-width: 270px;
-        //         height: auto;
-        //         margin-left: auto;
-        //         margin-right: auto;
-        //     }
-        //         .eventImage {
-        //             width: 100%;
-        //             height: auto;
-        //         }
-        //     .eventProjectParagrapDiv {
-        //         position: relative;
-        //         text-align: center;
-        //         margin: auto;
-        //         margin-top: 0px;
-        //     }
-        //         .paragraphEventProject.one {
-        //             padding-left: 7px;
-        //             padding-right: 7px;
-        //         }
-        //     .eventProjectToolsContainer {
-        //         margin-top: 10px;
-        //         margin-bottom: max(10px);
-        //     }
+    .twitterProject {
+            
+        border-radius: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 10px;
+        margin-right: 20px;
+        // max-width: 80%;
+    }
+
+}
+
+@media (max-width: 1200px){
+    
+    .twitterProjectContents {
+        display:flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+}
 
 //End of Right Column
