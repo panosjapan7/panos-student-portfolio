@@ -58,23 +58,24 @@ body {
 .paragraph1 {
   margin-top: 0px;
   font-family: "Poppins", sans-serif;
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 300;
 }
 
 .paragraph2 {
   font-family: "Poppins", sans-serif;
-  font-size: 16pt;
+  font-size: 15pt;
   font-weight: 300;
 }
 
 .paragraph3 {
   font-family: "Poppins", sans-serif;
-  font-size: 16pt;
+  font-size: 15pt;
   font-weight: 300;
 }
 
 .imagesContainer {
+  margin-top: 30px;
   margin-right: 20px;
 }
 
@@ -90,7 +91,7 @@ body {
 }
 
 .tabletImageContainer {
-  max-width: 0px;
+  max-width: 370px;
   height: auto;
   margin-top: 30px;
   padding-left: 30px;
@@ -116,9 +117,74 @@ body {
   box-shadow: 0 5px 10px -1px rgba(14, 31, 53, 0.06), 0 10px 20px -2px rgba(14, 31, 53, 0.1), 0 16px 32px -3px rgba(14, 31, 53, 0.12), 0 32px 64px -4px rgba(14, 31, 53, 0.14), 0 40px 72px -5px rgba(14, 31, 53, 0.24);
 }
 
-@media (max-width: 800px) {
-  .imagesContainer {
+@media (max-width: 1230px) {
+  .tabletImageContainer {
+    max-width: 370px;
+    height: auto;
+    margin-top: 60px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1175px) {
+  .tabletImageContainer {
+    max-width: 370px;
+    height: auto;
+    margin-top: 100px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1169px) {
+  .tabletImageContainer {
+    max-width: 370px;
+    height: auto;
+    margin-top: 150px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1116px) {
+  .tabletImageContainer {
+    max-width: 370px;
+    height: auto;
+    margin-top: 180px;
+    padding-left: 30px;
+  }
+
+  .codeImageContainer {
+    margin-top: 20px;
+    width: fit-content;
+    height: 320px;
+  }
+}
+@media (max-width: 1059px) {
+  .profilePhotoMainContentContainer {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 60px;
+    top: 50px;
+  }
+
+  .copyContainer {
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .tabletImageContainer {
     display: none;
+  }
+
+  .codeImageContainer {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  .profilePhotoMainContentContainer {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    right: 40px;
+    top: 50px;
   }
 }
 .leftColumnContainer {
