@@ -146,7 +146,7 @@ body {
         margin-right: 20px;
     }
         .codeImageContainer {
-                width: auto;
+                width: fit-content;
                 height: 350px;
         }
             .codeImage {
@@ -156,15 +156,15 @@ body {
             }
         
             .tabletImageContainer {
-                width: 400px;
+                max-width: 00px;
                 height: auto;
                 margin-top: 30px;
                 padding-left: 30px;
             }
-            .tabletImage {
-                width: 100%;
-                height: auto;
-            }
+                .tabletImage {
+                    width: 100%;
+                    height: auto;
+                }
         
             .profilePhotoMainContentContainer {
                 width: 120px;
@@ -182,8 +182,10 @@ body {
 
 
 // Mobile Resolution
-@media (max-width: 420px){
-
+@media (max-width: 800px){
+    .imagesContainer {
+        display:none;
+    }
 
     
 }
