@@ -184,6 +184,10 @@ body {
     min-height: 630px;
     margin-left: 0px;
   }
+
+  .profilePhotoMainContentContainer {
+    display: none;
+  }
 }
 .leftColumnContainer {
   display: block;
