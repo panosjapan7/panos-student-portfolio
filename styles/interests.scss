@@ -111,4 +111,21 @@ body {
                             font-weight: 500;
                         }
 
+// New Menu Resolutions
+@media (max-width: 855px){
+    .rightColumnDiv.interests{
+        width: 100%;
+        min-height: 630px;
+        margin-left: 0px;
+        // padding-top: 30px;
+        // padding-bottom: 20px;
+    }
+
+    .interestsCard{
+        max-width: 650px;
+    }
+    
+}
+
+
 //End of Right Column

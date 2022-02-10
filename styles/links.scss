@@ -148,6 +148,16 @@ body {
                     margin-top: 12px;
                 }
             
-            
+    // New Menu Resolutions
+    @media (max-width: 855px){
+        .rightColumnDiv.links{
+            width: 100%;
+            min-height: 630px;
+            margin-left: 0px;
+            // padding-top: 30px;
+            // padding-bottom: 20px;
+        }
+        
+    }
 
 //End of Right Column

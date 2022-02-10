@@ -178,13 +178,11 @@ body {
     display: none;
   }
 }
-@media (max-width: 770px) {
-  .profilePhotoMainContentContainer {
-    width: 80px;
-    height: auto;
-    position: absolute;
-    right: 40px;
-    top: 50px;
+@media (max-width: 855px) {
+  .rightColumnDiv.aboutMe {
+    width: 100%;
+    min-height: 630px;
+    margin-left: 0px;
   }
 }
 .leftColumnContainer {
@@ -229,6 +227,10 @@ body {
   color: #464A53;
   font-size: 10pt;
   line-height: 16px;
+}
+
+.personalDetailsDivMobile {
+  display: none;
 }
 
 .menuContainer {
@@ -340,6 +342,54 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 855px) {
+  .leftColumnContainer {
+    display: none;
+  }
+
+  .personalDetailsDivMobile {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .profilePicSmallContainerMobile {
+    width: 60px;
+    height: auto;
+  }
+
+  .profilePicSmallMobile {
+    border-radius: 1000px;
+    width: 100%;
+    height: auto;
+  }
+
+  .fullNameProfessionDivMobile {
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+
+  .fullNameMobile {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.4em;
+    letter-spacing: 1px;
+    color: #282a30;
+    font-size: 13pt;
+    line-height: 12px;
+  }
+
+  .professionMobile {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    letter-spacing: 1.1px;
+    color: #464A53;
+    font-size: 10pt;
+    line-height: 16px;
+  }
+}
 body {
   background-color: #edeef2;
   font-family: "Poppins", sans-serif;
@@ -589,6 +639,13 @@ body {
     align-items: flex-end;
     flex-wrap: wrap;
     align-content: space-between;
+  }
+}
+@media (max-width: 855px) {
+  .rightColumnDiv.projectList {
+    width: 100%;
+    min-height: 630px;
+    margin-left: 0px;
   }
 }
 body {
@@ -898,6 +955,13 @@ body {
   font-size: 13px;
 }
 
+@media (max-width: 855px) {
+  .rightColumnDiv.education {
+    width: 100%;
+    min-height: 630px;
+    margin-left: 0px;
+  }
+}
 body {
   background-color: #edeef2;
   font-family: "Poppins", sans-serif;
@@ -1009,6 +1073,17 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 855px) {
+  .rightColumnDiv.ambitions {
+    width: 100%;
+    min-height: 630px;
+    margin-left: 0px;
+  }
+
+  .goalsCard {
+    max-width: 650px;
+  }
+}
 body {
   background-color: #edeef2;
   font-family: "Poppins", sans-serif;
@@ -1120,6 +1195,17 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 855px) {
+  .rightColumnDiv.interests {
+    width: 100%;
+    min-height: 630px;
+    margin-left: 0px;
+  }
+
+  .interestsCard {
+    max-width: 650px;
+  }
+}
 body {
   background-color: #edeef2;
   font-family: "Poppins", sans-serif;
@@ -1249,6 +1335,14 @@ body {
   font-size: 13px;
   letter-spacing: 2px;
   margin-top: 12px;
+}
+
+@media (max-width: 855px) {
+  .rightColumnDiv.links {
+    width: 100%;
+    min-height: 630px;
+    margin-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=combined.css.map */
