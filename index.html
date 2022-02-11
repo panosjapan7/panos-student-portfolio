@@ -17,24 +17,6 @@
 
     <!--Wrapper Div that includes all elements of the website-->
     <div class="wrapper index">
-
-        <!--MOBILE: Profile pic, Full name, Profession Div-->
-        <div class="personalDetailsDivMobile">
-                
-            <div class="profilePicSmallContainerMobile">
-                <img
-                    class="profilePicSmallMobile" 
-                    alt="panos small profile pic"
-                    src="images/panos-sm-grey-bkgr.jpg"
-                />
-            </div>
-            
-            <div class="fullNameProfessionDivMobile">
-                <p class="fullNameMobile">Panos Tsapanidis</p>
-                <p class="professionMobile">Jr. Fullstack Web Dev</p>
-            </div>
-        </div>
-        <!--End of Profile pic, Full name, Profession Div-->
         
         <!--Left Column Div (Left Profile pic, Full name, Profession, Menu)-->
         <div class="leftColumnContainer">
@@ -182,7 +164,45 @@
 
         <!--Right Column Div for all elements inside the right column-->
         <div class="rightColumnDiv aboutMe">
-            
+
+
+            <!--Top Menu Container-->
+            <!--Profile Photo, Name, Profession + Top Menu-->
+            <div class="topMenuContainer">
+                 
+                <!--MOBILE: Profile pic, Full name, Profession Div-->
+                <div class="personalDetailsDivTablet">
+                
+                    <div class="profilePicSmallContainerTablet">
+                        <img
+                            class="profilePicSmallTablet" 
+                            alt="panos small profile pic"
+                            src="images/panos-sm-grey-bkgr.jpg"
+                        />
+                    </div>
+                
+                    <div class="fullNameProfessionDivTablet">
+                        <p class="fullNameTablet">Panos Tsapanidis</p>
+                        <p class="professionTablet">Jr. Fullstack Web Dev</p>
+                    </div>
+                </div>
+                <!--End of Profile pic, Full name, Profession Div-->
+
+                <!--About Me-->
+                <div class="aboutMeDivTablet">
+                    <svg
+                        class="aboutMeIconTablet" 
+                        xmlns="images/house.svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                      </svg>
+                    <p class="menuOptionTablet inactive">About Me</p>
+                </div>
+
+            </div>
+            <!--End of Top Menu Container-->
+
+
             <!--Copy-->
             <div class="copyContainer">
                 <h1 class="h1Text">Hi, I'm Panos.</h1>

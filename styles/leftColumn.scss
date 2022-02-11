@@ -40,10 +40,7 @@
                 font-size: 10pt;
                 line-height: 16px;
             }
-    //MOBILE
-    .personalDetailsDivMobile {
-        display:none;
-    }
+    
     
 
 
@@ -160,43 +157,6 @@
             // margin-top: 50px;
         }
 
-        .personalDetailsDivMobile {
-            display: block;
-            position: absolute;
-            top:30px;
-            left:50px;
-            display: flex;
-            align-items: flex-start;
-        }
-            .profilePicSmallContainerMobile {
-                width: 60px;
-                height: auto;
-            }
-                .profilePicSmallMobile {
-                    border-radius: 1000px;
-                    width: 100%;
-                    height: auto;
-                }
-            
-            .fullNameProfessionDivMobile {
-                margin-left: 10px;
-                padding-top:3px;
-            }
-                .fullNameMobile {
-                    margin-block-start: 0.5em;
-                    margin-block-end: 0.4em;
-                    letter-spacing: 1px;
-                    color: variables.$textColorDarkGrey;
-                    font-size: 13pt;
-                    line-height: 12px;
-                }
-                .professionMobile {
-                    margin-block-start: 0em;
-                    margin-block-end: 0em;
-                    letter-spacing: 1.1px;
-                    color: variables.$textColorLightGrey;
-                    font-size: 10pt;
-                    line-height: 16px;
-                }
+        
     }
         

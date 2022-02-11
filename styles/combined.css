@@ -178,11 +178,103 @@ body {
     display: none;
   }
 }
+.personalDetailsDivTablet {
+  display: none;
+}
+
+.topMenuContainer {
+  display: none;
+}
+
 @media (max-width: 855px) {
   .rightColumnDiv.aboutMe {
     width: 100%;
     min-height: 630px;
     margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .topMenuContainer {
+    display: block;
+  }
+
+  .personalDetailsDivTablet {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+
+  .profilePicSmallContainerTablet {
+    width: 60px;
+    height: auto;
+  }
+
+  .profilePicSmallTablet {
+    border-radius: 1000px;
+    width: 100%;
+    height: auto;
+  }
+
+  .fullNameProfessionDivTablet {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+
+  .fullNameTablet {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.4em;
+    letter-spacing: 1px;
+    color: #282a30;
+    font-size: 13pt;
+    line-height: 12px;
+  }
+
+  .professionTablet {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    letter-spacing: 1.1px;
+    color: #464A53;
+    font-size: 10pt;
+    line-height: 16px;
+  }
+
+  .aboutMeDivTablet {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 50px;
+    background: none;
+    background-color: transparent;
+  }
+
+  .aboutMeIconTablet {
+    color: #282a30;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 15px;
+  }
+
+  .menuOptionTablet {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: #282a30;
+    font-size: 11.5pt;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+  }
+
+  .menuOptionTablet.inactive {
+    font-size: 11.5pt;
+    font-weight: 500;
+    cursor: default;
   }
 
   .profilePhotoMainContentContainer {
@@ -231,10 +323,6 @@ body {
   color: #464A53;
   font-size: 10pt;
   line-height: 16px;
-}
-
-.personalDetailsDivMobile {
-  display: none;
 }
 
 .menuContainer {
@@ -349,49 +437,6 @@ a {
 @media (max-width: 855px) {
   .leftColumnContainer {
     display: none;
-  }
-
-  .personalDetailsDivMobile {
-    display: block;
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .profilePicSmallContainerMobile {
-    width: 60px;
-    height: auto;
-  }
-
-  .profilePicSmallMobile {
-    border-radius: 1000px;
-    width: 100%;
-    height: auto;
-  }
-
-  .fullNameProfessionDivMobile {
-    margin-left: 10px;
-    padding-top: 3px;
-  }
-
-  .fullNameMobile {
-    margin-block-start: 0.5em;
-    margin-block-end: 0.4em;
-    letter-spacing: 1px;
-    color: #282a30;
-    font-size: 13pt;
-    line-height: 12px;
-  }
-
-  .professionMobile {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    letter-spacing: 1.1px;
-    color: #464A53;
-    font-size: 10pt;
-    line-height: 16px;
   }
 }
 body {
