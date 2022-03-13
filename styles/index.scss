@@ -3,8 +3,6 @@
 body {
     // background-color: variables.$backgroundColorNew;
     font-family: variables.$fontPoppins;
-    
-
 }
 
 .wrapper.index {
@@ -56,10 +54,9 @@ body {
     margin-left: 248px;
     padding-top: 30px;
     padding-bottom: 20px;
-
+    
     border-radius: 20px;
     background-color: variables.$backgroundColorNew;
-    // background-image: variables.$background-image-rightColumnDiv;
     box-shadow: -10px -10px 20px 0 #FAFBFF, 10px 10px 20px 0 #A6ABBD;
 }
     .copyContainer {
@@ -255,7 +252,7 @@ body {
         min-height: 630px;
         margin-left: 0px;
         flex-direction: column;
-        // padding-top: 30px;
+        padding-top: 20px;
         // padding-bottom: 20px;
     }
 
@@ -267,7 +264,7 @@ body {
         .personalDetailsDivTablet {
             display: flex;
             align-items: flex-start;
-            margin-left: 30px;
+            margin-left: 10px;
             
         }
             .profilePicSmallContainerTablet {
@@ -280,8 +277,9 @@ body {
                     height: auto;
             }
         .fullNameProfessionDivTablet {
-            margin-left: 10px;
             margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
             padding-top:0px;
         }
             .fullNameTablet {
@@ -300,42 +298,87 @@ body {
                 font-size: 10pt;
                 line-height: 16px;
             }
-        
-        .aboutMeDivTablet{
+            
+            .LinkedinGitHubEmailDivTablet {
+                margin-top: 15px;
+                margin-left: 0px;
+                padding-bottom: 0px;
+                display: flex;
+                justify-content: space-between;
+                gap: 32px;
+            }
+                .linkedinIconTablet, .GithubIconTablet, .EmailIconTablet {
+                    // margin-right: 39px;
+                    width: 16px;
+                    height: 16px;
+                    // padding-left: 5px;
+                    // padding-right: 5px;
+                }
+                .EmailIconTablet {
+                    margin-right: 5px;
+                }
+                .linkedinIconTablet:hover, .GithubIconTablet:hover, .EmailIconTablet:hover {
+                    width: 18px;
+                    height: 18px;
+                }
+
+
+
+
+        .topMenuOptionsContainer{
             display: flex;
-            align-items: center;
             flex-direction: row;
-            margin-top: 10px;
-            margin-left: 50px;
-            background: none;
-            background-color: transparent;
+            flex-wrap: wrap;
+            gap: 23px 20px;
+            margin-top:23px;
+            margin-left: 30px;
         }
-            .aboutMeIconTablet {
-                color: variables.$textColorDarkGrey;
-                width:18px;
-                height:18px;
-                position: relative;
-                padding-bottom: 3px;
-                margin-right: 15px;
+            .topMenuDivTablet{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin-top: 0px;
+                
+                background: none;
+                background-color: transparent;
             }
-            .menuOptionTablet {
-                margin-block-start: 0;
-                margin-block-end: 0;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                color: variables.$textColorDarkGrey;
-                font-size: 11.5pt;
-                letter-spacing: 0.1em;
-                font-weight: 300;
+            .topMenuDivTablet.first{
+                // margin-left: 30px;
             }
-            .menuOptionTablet.inactive{
-                font-size: 11.5pt;
-                font-weight: 500;
-                cursor: default;
-            }
+                .topMenuIconTablet {
+                    color: variables.$textColorDarkGrey;
+                    width:18px;
+                    height:18px;
+                    position: relative;
+                    padding-bottom: 3px;
+                    margin-right: 10px;
+                }
+                .menuOptionTablet {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    color: variables.$textColorDarkGrey;
+                    font-size: 10pt;
+                    letter-spacing: 0.1em;
+                    font-weight: 300;
+                }
+                .menuOptionTablet.active:hover{
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+                .menuOptionTablet.inactive{
+                    font-size: 10pt;
+                    font-weight: 500;
+                    cursor: default;
+                }
         
+        .copyContainer {
+            margin-left: 10px;
+            
+        }
 
         //Displayed only in Desktop resolutions
         .profilePhotoMainContentContainer {

@@ -117,21 +117,153 @@ body {
                             font-weight: 500;
                         }
 
+
 // New Menu Resolutions
 @media (max-width: 855px){
+        
     .rightColumnDiv.ambitions{
         width: 100%;
         min-height: 630px;
         margin-left: 0px;
-        // padding-top: 30px;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-left: 0px;
         // padding-bottom: 20px;
     }
+    
+    .topMenuContainer {
+        display: block;
+    }
 
+    
+    .personalDetailsDivTablet {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 10px;
+        
+    }
+        .profilePicSmallContainerTablet {
+                    width: 60px;
+                    height: auto;
+        }
+        .profilePicSmallTablet {
+                border-radius: 1000px;
+                width: 100%;
+                height: auto;
+        }
+    .fullNameProfessionDivTablet {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding-top:0px;
+    }
+        .fullNameTablet {
+            margin-block-start: 0.5em;
+            margin-block-end: 0.4em;
+            letter-spacing: 1px;
+            color: variables.$textColorDarkGrey;
+            font-size: 13pt;
+            line-height: 12px;
+        }
+        .professionTablet {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            letter-spacing: 1.1px;
+            color: variables.$textColorLightGrey;
+            font-size: 10pt;
+            line-height: 16px;
+        }
+        
+        .LinkedinGitHubEmailDivTablet {
+            margin-top: 15px;
+            margin-left: 0px;
+            padding-bottom: 0px;
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+        }
+            .linkedinIconTablet, .GithubIconTablet, .EmailIconTablet {
+                // margin-right: 39px;
+                width: 16px;
+                height: 16px;
+                // padding-left: 5px;
+                // padding-right: 5px;
+            }
+            .EmailIconTablet {
+                margin-right: 5px;
+            }
+            .linkedinIconTablet:hover, .GithubIconTablet:hover, .EmailIconTablet:hover {
+                width: 18px;
+                height: 18px;
+            }
+
+
+    .topMenuOptionsContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 23px 20px;
+        margin-top:23px;
+        margin-left: 30px;
+    }
+        .topMenuDivTablet{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 0px;
+            
+            background: none;
+            background-color: transparent;
+        }
+        .topMenuDivTablet.first{
+            // margin-left: 30px;
+        }
+            .topMenuIconTablet {
+                color: variables.$textColorDarkGrey;
+                width:18px;
+                height:18px;
+                position: relative;
+                padding-bottom: 3px;
+                margin-right: 10px;
+            }
+            .menuOptionTablet {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                color: variables.$textColorDarkGrey;
+                font-size: 10pt;
+                letter-spacing: 0.1em;
+                font-weight: 300;
+            }
+            .menuOptionTablet.active:hover{
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .menuOptionTablet.inactive{
+                font-size: 10pt;
+                font-weight: 500;
+                cursor: default;
+            }
+
+    .ambitionsRectangle {
+        margin-left: 10px;
+    }
     .goalsCard{
         max-width: 650px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 5px;
     }
     
-}
+}       
+
+//End of Right Column
             
                 
 
