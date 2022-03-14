@@ -150,6 +150,12 @@
 
 
     @media (max-width: 855px){
+        body {
+            margin-left: 0px;
+        }
+        .wrapper {
+            margin-left: 0px;
+        }
         .leftColumnContainer {
             display: none;
         }
