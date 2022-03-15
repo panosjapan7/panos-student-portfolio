@@ -464,6 +464,49 @@ body {
             align-items: flex-end;
             margin-left: 10px;
         }
+        .rightImagesContainer {
+            margin-left: 50px;
+            margin-right: 10px;
+            // margin-right: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+            .desktopImageContainer {
+                width:fit-content;
+                height: auto;
+                
+            }
+                .desktopImageContainer img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                    box-shadow: 0 40px 64px -6px rgba(14,31,53,0.36);
+                }
+            .desktopImageContainerPanos {
+                width:450px;
+                height: auto;
+            }
+                .desktopImageContainerPanos {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                    box-shadow: 0 40px 64px -6px rgba(14,31,53,0.36);
+                }
+            .mobileImageContainer {
+                width:128px;
+                height: auto;
+                position: absolute;
+                bottom: 269px;
+                left: -50px;
+
+            }
+                .mobileImageContainer img {
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    // box-shadow: 0 40px 64px -6px rgba(14,31,53,0.36);
+                    
+                }
     .portfolioProject {
         // max-width:max-content;
     }
