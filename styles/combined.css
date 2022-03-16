@@ -1214,7 +1214,7 @@ body {
 
 .buttonsContainer.three {
   display: flex;
-  gap: 20px 23px;
+  gap: 20px 40px;
   flex-wrap: wrap;
 }
 
