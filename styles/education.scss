@@ -236,8 +236,12 @@ body {
                     width: 42px;
                     height: 50px;
                 }
-                .buttonPHPLogo, .buttonALMLogo, .masterThesisLogo {
+                .buttonALMLogo, .masterThesisLogo {
                     width: 42px;
+                    height: auto;
+                }
+                .buttonTypeScriptLogo {
+                    width:60px;
                     height: auto;
                 }
                 
