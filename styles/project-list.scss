@@ -580,5 +580,14 @@ body {
     }
 }
 
+@media (max-width: 400px){
+
+    .mobileImageContainer {
+        max-width: 66px;
+        bottom: 141px;
+        left: -35px;
+    }
+}
+
 
 //End of Right Column
